@@ -1,0 +1,21 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Not4.hdl
+
+/**
+ * 4-bit Not:
+ * for i=0..3: out[i] = not in[i]
+ */
+
+CHIP Not4 {
+    IN in[4];
+    OUT out[4];
+
+    PARTS:
+    // Put your code here:
+    Not(in=in[0], out=out[0]);
+    Not(in=in[1], out=out[1]);
+    Not(in=in[2], out=out[2]);
+    Not(in=in[3], out=out[3]);
+}
