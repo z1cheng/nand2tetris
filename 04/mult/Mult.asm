@@ -32,15 +32,11 @@ D=M-D;
 @END
 D;JEQ
 
-//add R1 and R2
-@R2
-D=M
+//add R1 and R2, put the result into R2
 @R1
-D=M+D
-
-//put the result into R2
+D=M
 @R2
-M=D
+M=M+D
 
 //i++
 @i
