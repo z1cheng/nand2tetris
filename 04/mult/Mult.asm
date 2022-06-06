@@ -19,8 +19,8 @@ M=0
 M=0
 
 (LOOP)
-
 //R0 means the number of loops
+//use i variable to avoid updating R0 and R1
 //compare i and R0
 @i
 D=M
