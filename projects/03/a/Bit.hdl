@@ -1,0 +1,23 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/03/a/Bit.hdl
+
+/**
+ * 1-bit register:
+ * If load[t] == 1 then out[t+1] = in[t]
+ *                 else out does not change (out[t+1] = out[t])
+ */
+
+CHIP Bit {
+    IN in, load;
+    OUT out;
+
+    PARTS:
+    // Put your code here:
+    // HDL isn't a programing language, but an electrical circuit you are creating
+    // So the order of these chips doesn't matter(Reference: https://www.coursera.org/learn/build-a-computer/discussions/forums/aHveBSj3Eea8jw6UvTi2Tw/threads/SoYRCCpGEey3ZhJLFvYuXQ)
+
+    Mux(a=old, b=in, sel=load, out=temp);
+    DFF(in=temp, out=out, out=old);
+}
