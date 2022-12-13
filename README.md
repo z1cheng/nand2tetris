@@ -2,7 +2,7 @@
 Project solutions for https://www.nand2tetris.org/
 
 ## Project 06 - Hack Assembler
-Implement an assembler for the Hack assembly language using Golang: [hack-assembler](../nand2tetris/projects/06/hack-assembler/).
+Implement an assembler for the Hack assembly language using Golang: [hack-assembler](./projects/06/hack-assembler/).
 
 The comparison succeeded with the original assembler:
 
